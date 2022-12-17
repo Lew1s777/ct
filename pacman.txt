@@ -1,0 +1,16 @@
+-Syyu		update all
+-S 		install
+-Syy		force update pacman
+-Ss		update application
+-Rns []		delete[app]
+-Q		list app
+-Qe		list app that user install
+Qe | wc -l	count the app that user install
+-Qq		-Q but no version number
+-Qs []		information about an app
+-Qdt		list useless depencies
+-D              change file type
+pacman-key --refresh-keys       fix pacman sign
+sudo pacman -R $(pacman -Qdtq)	remove useless depencies
+
+config locate		/etc/pacman.conf
