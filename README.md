@@ -1,4 +1,4 @@
-Chey assume that you have read the official documents and understand the concepts.
+**I assume that you have read the official documents and understand the concepts.**
 
 index
 ---
