@@ -1,8 +1,4 @@
-CheatSheet
-===
-my cheatsheets.
-
-note that these cheatsheet are only used to prevent forgetting and they assume that you have read the official documents and understand the concepts.
+Chey assume that you have read the official documents and understand the concepts.
 
 index
 ---
@@ -23,10 +19,11 @@ index
   - [chmod](./chmod.md)
 - bootloader
   - [grub](./grub.md)
+  - [sysemd-boot](./systemd-boot.md)
 - [git](./git.md)
 - pkgmanager
   - mac-[homebrew](./homebrew.md)
-  - arch-[pacman](./pacman.txt)
+  - archlinux-[pacman](./pacman.txt)
 - network
   - [wpa_supplicant](./wpa_supplicant.md)
   - networkmanager
@@ -36,6 +33,15 @@ index
 - storage
   - smb/cif
     - [samba](./samba.md)
+  - Disk
+	-SSD
+	  - [I/O](./io.md)
+	  - [TRIM](./TRIM.md)
+- backup
+  - tar
+
+#### WM ####
+- [dwm](https://github.com/Lew1s777/dwm)
 
 #### hardware related
 - cpu.undervolting
@@ -55,3 +61,7 @@ index
     - [vim-script](https://github.com/Lew1s777/init.vim)
 
 #### else
+- [ALHP](./ALHP.md)
+- [markdown cheatsheet](./markdown-cheatsheet/README.md)
+- mouse
+  - [gpm](./gpm.md)

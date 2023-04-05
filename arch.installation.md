@@ -57,10 +57,10 @@ vim /etc/pacman.d/mirrorlist				#use mirrors
 - start installation:)
 ```
 #install arch
-pacstrap /mnt base linux linux-firmware linux-headers                                           #for default kernel users
-#pacstrap /mnt base linux-zen linux-firmware linux-zen-headers                                  #for zen kernel users
+pacstrap /mnt base base-devel linux-firmware linux-zen linux-zen-headers
 
-genfstab -U /mnt >> /mnt/etc/fstab                                                              #make fstab(for mounting partitions)
+#make fstab(for mounting partitions)
+genfstab -U /mnt >> /mnt/etc/fstab                                                              
 ```
 
 - configure ur band new arch linux system
@@ -86,11 +86,18 @@ passwd							#set your pc password
 ```
 pacman -S grub efibootmgr amd-ucode os-prober		#install intel-ucode if your intel processor user
 mkdir /boot/grub
-grub-mkconfig > /boot/grub/grub.cfg
-grub-install --target=x86-efi --efi-directory=/boot	#DO NOT SIMPLY FOLLOW THIS STEP!set you own architecture & boot folder
+grub-mkconfig -o /boot/grub/grub.cfg
+grub-install --target=x86_64-efi --efi-directory=/boot	--bootloader-id=GRUB#DO NOT SIMPLY FOLLOW THIS STEP!set you own architecture & boot folder
 #basic installlation finished
 ```
 - reboot ur pc
 ```
 reboot							#reboot your pc
+```
+
+sync time
+---
+
+```
+timedatectl set-ntp true
 ```
