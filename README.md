@@ -37,6 +37,7 @@ index
 	-SSD
 	  - [I/O](./io.md)
 	  - [TRIM](./TRIM.md)
+  - [baobab](./baobab.md)
 - backup
   - tar
 
@@ -65,3 +66,5 @@ index
 - [markdown cheatsheet](./markdown-cheatsheet/README.md)
 - mouse
   - [gpm](./gpm.md)
+- music
+  - [go-musicfox](./go-musicfox.md)
