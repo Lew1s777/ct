@@ -18,8 +18,10 @@ index
   - [doas](./doas.md)
   - [chmod](./chmod.md)
 - bootloader
+  - [efibootmgr](./efibootmgr.md)
   - [grub](./grub.md)
   - [sysemd-boot](./systemd-boot.md)
+  - [EFISTUB](./EFISTUB.md)
 - [git](./git.md)
 - pkgmanager
   - mac-[homebrew](./homebrew.md)
@@ -53,13 +55,16 @@ index
 - video
   - [ffmpeg](./ffmpeg.md)
 - browser
-  - [chromium](chromium.md)
+  - [chromium](./chromium.md)
 - file manager
   - [ranger](./ranger.md)
 - text editor
-  - vim
+  - neovim
     - [lua](https://github.com/Lew1s777/init.lua)
     - [vim-script](https://github.com/Lew1s777/init.vim)
+    - [unusual function](./neovim.md)
+  - emacs
+    - I am learning emacs
 
 #### else
 - [ALHP](./ALHP.md)
@@ -68,3 +73,5 @@ index
   - [gpm](./gpm.md)
 - music
   - [go-musicfox](./go-musicfox.md)
+- color
+  - [gpick](./gpick.md)

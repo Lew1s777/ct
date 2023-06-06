@@ -10,3 +10,8 @@ pacman -S ranger
 
 configration
 ---
+
+usage
+---
+
+```bulkrename```

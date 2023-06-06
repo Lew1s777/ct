@@ -1,6 +1,10 @@
+Archlinux installlation
+===
 ```
 Arch linux installation cheatsheet by Github@Lew1s777
 ```
+Installation guide
+---
 - check list
   - Before installation check your boot mode(UEFI/BIOS) (and for dual-boot with other operating system,check your whether your EFI partition is enough;make sure your PC battery is enough)
 - download iso
@@ -13,8 +17,10 @@ Arch linux installation cheatsheet by Github@Lew1s777
 
 ## optional,if you are using keymaps that are not commonly used
 #$ loadkeys [ur keymap]
+```
 
-#connect the internet(wifi/wpa_supplicant)
+- connect the internet(wifi/wpa_supplicant)
+```
 $ ip link	                                        #check your network card device's name
 $ ip link set [networkcard] up	                        #enable your network card
 iwlist [networkcard] scan | grep ESSID			#scan the internet,find your wifi's name
@@ -24,10 +30,12 @@ dhcpcd &
 
 timedatectl set-ntp true				#sync time
 ```
+- connect the internet(wifi/iwctl)
+```
+```
 
 - partition:
-
-  - see "https://wiki.archlinux.org/title/Installation_guide#Partition_the_disks" "https://wiki.archlinux.org/title/Dual_boot_with_Windows#Linux_before_Windows"
+  - see officail manual here [normal](https://wiki.archlinux.org/title/Installation_guide#Partition_the_disks)/[dual boot with windows](https://wiki.archlinux.org/title/Dual_boot_with_Windows#Linux_before_Windows)
 ```
 fdisk -l						#check your disk device name
 fdisk [disk]						#start making partition

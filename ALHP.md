@@ -1,6 +1,13 @@
 ALHP
 ===
-Buildbot for Archlinux-based repos build with different x86-64 feature levels, -O3 and LTO.
+- Buildbot for Archlinux-based repos build with different x86-64 feature levels, -O3 and LTO.
+
+<!-- markdown-toc GFM -->
+
+* [Installation](#installation)
+* [Unistall](#unistall)
+
+<!-- markdown-toc -->
 
 Installation
 ---
@@ -31,4 +38,14 @@ Include = /etc/pacman.d/alhp-mirrorlist
 - Update package database and upgrade
 ```
 pacman -Suy
+```
+
+Unistall
+---
+remove What you write into your ```/etc/pacman.conf```
+
+Then(as root)
+```
+pacman -R alhp-keyring alhp-mirrorlist
+pacman -Syuu
 ```
