@@ -29,3 +29,15 @@ restore
 tar -xvpzf /media/disk/backup.tar.gz -C /
 ```
 
+*
+---
+```
+#tar -cvpzf /media/moose/share/20190130_debian9.6_amd64_home_opt.tar.gz --exclude=/bin --exclude=/etc --exclude=initrd.img.old --exclude=/lost+found --exclude=/run --exclude=/sys --exclude=/var --exclude=/boot --exclude=/lib --exclude=/media --exclude=/proc --exclude=/sbin --exclude=/tmp --exclude=vmlinuz --exclude=/dev --exclude=initrd.img --exclude=/lib64 --exclude=/mnt --exclude=/root --exclude=/srv --exclude=/usr --exclude=vmlinuz.old /
+
+#back up all
+tar -cvpzf /media/temp/arch.backup.tar.gz --exclude=/run --exclude=/sys --exclude=/media --exclude=/proc --exclude=/tmp --exclude=/dev --exclude=/mnt /
+
+#back up without boot partition
+#tar -cvpzf /media/temp/arch.backup.tar.gz --exclude=/run --exclude=/sys --exclude=/media --exclude=/proc --exclude=/tmp --exclude=/dev --exclude=/mnt --exclude=/data --exclude=/src --exclude=/boot /
+
+```

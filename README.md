@@ -73,6 +73,7 @@ index
   - [gpm](./gpm.md)
 - music
   - [go-musicfox](./go-musicfox.md)
+  - [mpd](./mpd.md)
 - color
   - [gpick](./gpick.md)
 - electron
