@@ -78,3 +78,5 @@ index
   - [gpick](./gpick.md)
 - electron
   - [electron](./electron.md)
+- blog
+  - [hexo](./hexo.md)
