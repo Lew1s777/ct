@@ -41,3 +41,10 @@ tar -cvpzf /media/temp/arch.backup.tar.gz --exclude=/run --exclude=/sys --exclud
 #tar -cvpzf /media/temp/arch.backup.tar.gz --exclude=/run --exclude=/sys --exclude=/media --exclude=/proc --exclude=/tmp --exclude=/dev --exclude=/mnt --exclude=/data --exclude=/src --exclude=/boot /
 
 ```
+
+---
+
+#### backup only a dir(to bz2)
+```
+tar -cjf /media/data/backup/server.tar.bz2 ./*
+```
