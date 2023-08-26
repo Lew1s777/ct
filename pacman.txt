@@ -14,3 +14,5 @@ pacman-key --refresh-keys       fix pacman sign
 sudo pacman -R $(pacman -Qdtq)	remove useless depencies
 
 config locate		/etc/pacman.conf
+
+sudo pacman -S xxx --overwrite "*"
